@@ -7,15 +7,20 @@ export default {
                 roboto: ["Roboto", "sans-serif"],
             },
             keyframes: {
+                slowSpin: {
+                    "0%": { transform: "rotate(0deg)" },
+                    "50%": { transform: "rotate(180deg)" },
+                    "100%": { transform: "rotate(360deg)" },
+                },
                 bell: {
                     "0%": { transform: "rotate(0deg)" },
                     "10%": { transform: "rotate(14deg)" },
-                    "20%": { transform: "rotate(-8deg)" }, 
-                    "30%": { transform: "rotate(14deg)" }, 
+                    "20%": { transform: "rotate(-8deg)" },
+                    "30%": { transform: "rotate(14deg)" },
                     "40%": { transform: "rotate(-4deg)" },
-                    "50%": { transform: "rotate(10deg)" }, 
-                    "60%": { transform: "rotate(0deg)" }, 
-                    "100%": { transform: "rotate(0deg)" }, 
+                    "50%": { transform: "rotate(10deg)" },
+                    "60%": { transform: "rotate(0deg)" },
+                    "100%": { transform: "rotate(0deg)" },
                 },
                 stripes: {
                     "0%": { backgroundPosition: "0 0" },
@@ -24,7 +29,8 @@ export default {
             },
             animation: {
                 stripes: "stripes 3s linear infinite",
-                bell: "bell 2s ease-in-out infinite",
+                bell: "bell 1.5s ease-in-out infinite",
+                slowSpin: "slowSpin 6s linear infinite",
             },
         },
         screens: {
